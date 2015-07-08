@@ -1,0 +1,95 @@
+<ion-side-menus id="destacados">
+
+	<!-- Center content -->
+	<ion-side-menu side="left" controller="destacadosController" class="left-menu">
+		<ion-view>
+			<ion-header-bar class="bar-assertive">
+				<h1 class="title">Martin Seamus McFly</h1>
+				<a href="#/profile" class="button button-clear icon ion-email"></a>
+			</ion-header-bar>
+			<ion-content>
+				<ion-list type="list-inset"> 
+					<ion-item class="title">
+						<p >cluber cash</p>
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Acumula Cash
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Acumula Cash
+					</ion-item>
+				</ion-list>
+				<ion-list type="list-inset"> 
+					<ion-item class="title">
+						<p >Beneficios</p>
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Destacados
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Comercios
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Viajes
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Fast Food y Restaurantes
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Entretenimiento
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Belleza y cuidado personal
+					</ion-item>																
+				</ion-list>	
+			</ion-content>
+		
+			<ion-footer-bar align-title="left" class="bar-assertive">
+				<button class="button button-clear buton-icon ">
+					Cerrar Sesion
+					<i class="icon ion-email"></i>
+				</button>
+			</ion-footer-bar>
+		</ion-view>			
+	</ion-side-menu>  
+
+	<ion-side-menu-content>
+	<!-- Main content, usually <ion-nav-view> -->
+		<ion-view>
+			<ion-nav-bar class="cluber-header">
+				<ion-nav-view >
+					<ion-nav-buttons >
+						<button class="button button-clear button-clear" ng-click="toggleLeft()">
+							<i class="icon ion-navicon-round"></i>
+							Destacados
+						</button>
+					</ion-nav-buttons>
+				</ion-nav-view>			
+			</ion-nav-bar>
+		
+			<ion-content>
+				<ul class="list">
+					<a href="#/detail" class="item" ng-repeat=" counter in [1,2,3,4,5,6]" ng-click="setBenefit(12)">
+						<img src="img/assets/chicharron.jpg" alt="">
+						<div class="logo">
+							<img src="img/assets/el_chinito.gif" alt="">
+						</div>
+						<p>Sanguches El Chinito</p>
+						<div class="descuento">
+							20% dsct.
+						</div>
+					</a>
+				</ul>
+			</ion-content>	
+		</ion-view>	
+	</ion-side-menu-content>
+
+</ion-side-menus>

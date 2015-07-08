@@ -1,0 +1,38 @@
+<ion-view>
+	<ion-nav-bar class="cluber-header" >
+	  <ion-nav-back-button ng-click="myGoBack()" >
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div id="account">
+			<div class="status">
+				<h1 >Estado de cuenta</h1>
+				<p>Actualmente tienes</p>
+				<div class="points">
+					<p>163</p>
+					<p>Puntos <br> disponibles</p>
+				</div>				
+			</div>
+
+			<form name="estado_cuenta" novalidate>
+				<ul class="list list-inset">
+					<li class="item item-input">
+						<input type="text" class="text-center" required name="codigo" placeholder="Escribe el código">
+					</li>
+					<li class="item item-input">
+						<button class="button button-full button-icon button-clear  green">
+							<i class="icon ion-plus-circled"></i>
+							Agregar puntos</button>
+					</li>
+				</ul>
+			</form>			
+		</div>
+	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<a href="#/destacados">
+				<div class="title" >Ver Beneficios</div>
+			</a>
+		</div>
+	</ion-footer-bar>
+</ion-view>

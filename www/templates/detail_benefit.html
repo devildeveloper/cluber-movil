@@ -1,0 +1,114 @@
+<ion-side-menus id="detailBenefit">
+
+	<!-- Center content -->
+	<ion-side-menu side="left" controller="detailBenefitController" class="left-menu">
+		<ion-view>
+			<ion-header-bar class="bar-assertive">
+				<h1 class="title">Martin Seamus McFly</h1>
+				<a href="#/profile" class="button button-clear icon ion-email"></a>
+			</ion-header-bar>
+			<ion-content>
+				<ion-list type="list-inset"> 
+					<ion-item class="title">
+						<p >cluber cash</p>
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Acumula Cash
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Acumula Cash
+					</ion-item>
+				</ion-list>
+				<ion-list type="list-inset"> 
+					<ion-item class="title">
+						<p >Beneficios</p>
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Destacados
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Comercios
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Viajes
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Fast Food y Restaurantes
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Entretenimiento
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-email"></i>
+						Belleza y cuidado personal
+					</ion-item>																
+				</ion-list>	
+			</ion-content>
+		
+			<ion-footer-bar align-title="left" class="bar-assertive">
+				<button class="button button-clear buton-icon ">
+					Cerrar Sesion
+					<i class="icon ion-email"></i>
+				</button>
+			</ion-footer-bar>
+		</ion-view>			
+	</ion-side-menu>  
+
+	<ion-side-menu-content>
+	<!-- Main content, usually <ion-nav-view> -->
+		<ion-view>
+			<ion-nav-bar class="cluber-header">
+				<ion-nav-view >
+					<ion-nav-buttons >
+						<button class="button button-clear button-clear" ng-click="toggleLeft()">
+							<i class="icon ion-navicon-round"></i>
+							Destacados
+						</button>
+					</ion-nav-buttons>
+				</ion-nav-view>			
+			</ion-nav-bar>
+		
+			<ion-content>
+				<div class="info" >
+					<div class="wrapper">
+						<div class="promoPhoto" style="background-image:url(img/assets/chicharron.jpg)"> </div>
+						<p class="title">Sangucherí El Chinito</p>			
+						<p class="description">20% de descuento en sánguches.</p>
+					</div>
+					<div class="remaining">
+						<p>Te quedan: <span class="orange">5</span></p>
+						<p><span class="icon icon-time"></span> 2 semanas</p>
+						<p><span class="icon icon-time"></span></p>
+					</div>
+				</div>
+				<div class="accordion">
+					<h3 class="title">Descripción</h3>
+					<div class="body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, neque illum! Quam maiores deserunt perspiciatis aperiam magni laborum, omnis necessitatibus nisi alias facere, laudantium explicabo, earum adipisci harum vero ad.
+					</div>
+					<h3 class="title">Condiciones</h3>
+					<div class="body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, recusandae, repellat. Atque, dolor, doloremque! Recusandae, nesciunt? Neque ducimus autem, facilis, id nostrum repellat culpa vero nihil, veniam dolorem est numquam.
+					</div>
+				</div>
+
+
+
+			</ion-content>	
+		</ion-view>	
+	</ion-side-menu-content>
+
+</ion-side-menus>
+
+<ion-footer-bar align-title="left" class="bar-assertive bar-green">
+	<div class="buttons">
+		<a href="#/accountStatus"><div class="title" >Generar cupón</div></a>
+	</div>
+</ion-footer-bar>

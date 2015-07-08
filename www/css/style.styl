@@ -1,0 +1,360 @@
+//colors
+$green = rgb(42,175,139)
+$red=rgb(219,74,75)
+$orange = rgb(233,152,152)
+.button-red
+	background-color $red !important
+	color white !important
+.green
+	color $green
+.orange
+	color $orange
+.bar-green
+	background-color $green	!important
+	border 1px solid $green !important
+$gray = #B6B6B6
+//override
+.button-red
+	background-color $red
+	color white
+	&:hover
+		color white
+	&.active
+		background-color $red
+		color white
+.padding0
+	padding 0 !important;	
+.block
+	display block
+//util
+.text-center
+	text-align center	
+.text-right
+	text-align right	
+//dom
+body
+	overflow hidden
+	font-weight lighter
+	font-size .9rem
+	& *
+		font-size inherit
+
+footer
+	position absolute
+	width 100%
+	bottom 0
+	left 0
+	a,button
+		margin-bottom 0 !important
+.button.button-full
+	margin-top 0 !important
+select
+	display block
+	border 1px solid $gray
+	width 100%
+	padding 10px
+	-moz-appearance none
+	-webkit-appearance none
+	background-image url(../img/assets/arrow_down.png)
+	background-position 98% 50%
+	background-size 5%
+	background-repeat no-repeat
+	border-radius 0		
+//styles
+.inline-bar
+	a
+		width 50%
+		float right
+		background-color $green
+		color white
+		border 0
+		border-radius 0
+		&:hover
+			color white
+		&:first-child
+			float left
+			background-color white
+			color $green
+			&:hover
+				color $green
+//windows
+#init
+	main
+		position relative
+		width 100%
+		height 100%
+		background-image url('../img/assets/background_home.png')
+		background-position 0 0
+		background-size cover
+		.logo
+			position relative
+			height 150px
+			width 90%
+			margin 0 auto
+			top 50%
+			transform translateY(-50%)
+			background-image url('../img/assets/cluber_logog.png')
+			background-repeat no-repeat
+			background-size contain
+			background-position center center
+.cluber-header
+	background-image url('../img/assets/logo_cluberi.png')
+	background-repeat no-repeat
+	background-size auto
+	background-position 35px 35px
+	background-color $green
+	i
+		color white !important
+.left-menu
+	.item
+		border-left 0
+		border-right 0
+	.title
+		border 0 !important
+		p
+			font-size 1.2rem
+			color $red
+			border-bottom 2px solid $red
+			text-transform uppercase
+			padding-bottom 10px
+			line-height 1.5rem
+			font-weight bolder
+			padding 0
+			margin-left -5px
+	ion-list
+		display block		
+.padding0
+	select
+		border transparent !important		
+.credit-card
+	margin-top 30px
+	display table
+	width 100%
+	input
+		line-height 0
+		width 30%
+		margin-left 2.5%
+		display table-cell
+		border 1px solid lightgray
+		box-shadow 0
+		border-radius 0
+		&:last-child
+			margin-right 2.5%
+#nuevaTarjeta
+	&>*
+		text-align center
+		margin-top 20px
+	img
+		display block
+		margin 0 auto
+		margin-top 30px
+	h1
+		font-weight lighter
+		color $green
+		width 80%
+		margin 0 auto
+		font-size 1.8rem
+		//margin-top 90px
+	p
+		color #B6B6B6
+		width 80%
+		margin 0 auto
+		margin-top 10px
+		font-weight lighter
+		&+p
+			margin-top 5px
+	select
+		&+p
+			margin-top 30px
+			width 100%
+	p
+		span
+			color $green
+		a
+			color $gray
+			text-decoration underline
+#valida3
+	.divider
+		padding-top 30px
+		h3
+			margin-bottom 10px
+	.terminos
+		padding-top 40px
+		padding-bottom 10px
+#account
+	.green
+		color $green !important	
+	h1
+		font-weight lighter
+		font-size 1.8rem
+		border-bottom 1px solid $green
+	.item+.item
+		margin-top 15px
+	.button.button-block, .button.button-full
+		margin-bottom 0 !important	
+	.status
+		width 80%
+		margin 0 auto
+		padding-top 50px
+		.points
+			margin-top 10px
+			
+			p
+				display inline-block
+				&:first-child
+					font-size 3rem
+					line-height 3.2rem
+				&+p 
+					margin-left 10px
+#destacados
+	.cluber-header
+		background-image none
+	ul.list
+		.item 
+			height 200px
+			overflow hidden
+			position relative
+			padding 0
+			&:first-child
+				margin-top 60px
+			img 
+				display block
+				width 100%
+			.logo
+				position absolute
+				left 0
+				top 5px
+			p 
+				padding 10px
+				position absolute
+				bottom 0
+				left 0
+				width 100%
+				background-color rgba(255,255,255,.7)
+				margin-bottom 0
+			.descuento
+				background-color $green
+				color white
+				height 45px
+				line-height 1.5rem
+				padding 10px
+				bottom 60px
+				right 0 
+				font-size 1.5rem
+				position absolute
+	button
+		color white !important
+	ion-footer-bar
+		p
+			color white !important
+		
+#profile
+	.tab-item-active
+		color #3A3A3A !important
+		border-bottom 2px solid $red
+	.cluber-header
+		background-position 95% 35px
+	button
+		color white !important
+	.user-content
+		position relative
+		padding-bottom 45px
+		.user-info
+			margin-top 60px
+			background-color $red
+			padding-top 10px
+			img
+				width 100px
+				height 100px
+				margin 0 auto
+				border-radius 50%
+				display block
+			p
+				color white
+				font-size 1.3rem
+				text-align center
+				line-height 1.5rem
+				padding-top 10px
+				padding-bottom 10px
+	.tabs
+		border-top 0 !important
+		border-bottom 0 !important
+		background-color white !important
+	.tab
+		height 70px
+		overflow hidden
+		padding 0
+		margin-left 5px
+		margin-right 5px
+		border-radius 5px
+		margin-top 10px
+		background-position 0 0
+		background-size cover
+		background-repeat no-repeat
+		.content
+			padding 10px
+			padding-top 5px
+			height 70px
+			p
+				color white
+				&.title
+					font-size 1.1rem
+				&:last-child
+					margin-top 10px
+		i
+			color white !important
+#detailBenefit
+	background-color #EBEBEB
+	.cluber-header
+		background-position 95% 35px
+	button
+		color white !important	
+	.info
+		background-color white
+		padding 5px
+		margin-top 60px
+		.promoPhoto
+			width 100%
+			height 90px
+			background-position 0 0
+			background-size cover
+			background-repeat no-repeat
+			margin-bottom 10px
+		p 
+			&:first-child,&.title,&.description
+				margin-left 10px
+			&.title
+				font-size 1.4rem
+			&.description
+				font-size 1.2rem
+		.wrapper
+			img 
+				border-radius 5px
+				max-height 80px
+		.remaining
+			border-top 1px solid #EBEBEB
+			display table
+			width 100%
+			p
+				display table-cell
+				vertical-align center
+				width 33%
+				text-align center
+				&:first-child
+					text-align left
+					padding-left 10px
+				&:last-child
+					text-align right
+	.accordion
+		& .title
+			padding-left 15px
+			padding-top 8px
+			padding-bottom 8px 
+			font-size 1.4rem
+			font-weight lighter
+			margin 0
+			border-top 1px solid #EBEBEB
+			border-bottom 1px solid #EBEBEB
+		& .body
+			background-color #EBEBEB
+			padding 15px

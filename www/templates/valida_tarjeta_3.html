@@ -1,0 +1,53 @@
+<ion-view>
+	<ion-nav-bar class="cluber-header">
+		<ion-nav-back-button ng-click="myGoBack()" >
+		</ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div id="valida3">
+			<form name="validate2" novalidate ng-submit="valite2()">
+				<ul class="list">
+					<li class="item">
+						<h3 class="green"> Info Académica</h3>
+					</li>
+					<li class="item item-input padding0">
+						<select name="uni">
+							<option value="0">Universidad / Insituto</option>
+						</select>
+					</li>
+					<li class="item item-input padding0">
+						<select name="sede" id="">
+							<option value="0">Sede</option>
+						</select>
+					</li>
+					<li class="item item-input padding0">
+						<select name="carrera" id="">
+							<option value="0">Carrera</option>
+						</select>
+					</li>
+					<li class="item divider"> 
+						<h3 class="green">Mi Cuenta Cluber</h3>
+						<p>Tu cuenta Cluber estará asociada a un correo , indicanos a cual.</p>
+					</li>
+					<li class="item item-input">
+						<input type="email" name="email" placeholder="Correo" required>
+					</li>			
+					<li class="item item-input">
+						<input type="password" name="passwd" placeholder="Contraseña" required>
+					</li>
+					<div class="terminos">
+						<p class="text-center">Al registrarme en Cluber acepto los</p>
+						<a href="" class="block text-center">Terminos y condiciones</a>
+					</div>
+				</ul>
+			</form>
+		</div>
+	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<a href="#/valida_tarjeta_4">
+				<div class="title">Unirme</div>
+			</a>
+		</div>
+	</ion-footer-bar>	
+</ion-view>

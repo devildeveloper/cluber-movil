@@ -1,0 +1,29 @@
+<ion-view>
+	<ion-nav-bar class="cluber-header" >
+	  <ion-nav-back-button ng-click="myGoBack()">
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div id="nuevaTarjeta">
+			<img src="img/assets/tarjeta_cluber_front.png" />
+			<h1>Solicita tu tarjeta</h1>
+			<p>Para ser parte de Cluber debes contar con una
+				tarjeta, la misma que tiene un costo de S/9.90
+				nuevos soles y tiene una validez de 6 meses.</p>
+			<p>Indícanos donde estudias y te diremos donde puedes comprarla</p>
+			<select name="uni">
+				<option value="0">Universidad/Instituo</option>
+			</select>
+			<select name="sede">
+				<option value="0">Sede</option>
+			</select>
+			<p><span>¿Ya tienes una tarjeta? <a href="#/valida_tarjeta_1">ACTÍVALA AQUÍ</a></span></p>
+		</div>
+	</ion-content>
+
+	<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<a href=""><div class="title" >Solicitar</div></a>
+		</div>
+	</ion-footer-bar>
+</ion-view>

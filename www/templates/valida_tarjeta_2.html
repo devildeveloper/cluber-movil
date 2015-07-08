@@ -1,0 +1,46 @@
+<ion-view>
+	<ion-nav-bar class="cluber-header">
+		<ion-nav-back-button ng-click="myGoBack()" >
+		</ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div id="valida2">
+			<p class="text-center" style="margin-top:20px">
+				Registrate con todos tu datos
+			</p>
+			<form name="validate2" novalidate ng-submit="valite2()">
+				<ul class="list">
+					<li class="item">
+						<h3 class="green"> Info Personal</h3>
+					</li>
+					<li class="item item-input">
+						<input type="text" name="nombres" placeholder="Nombres">
+					</li>
+					<li class="item item-input">
+						<input type="text" name="apellidos" placeholder="apellidos">
+					</li>
+					<li class="item item-input">
+						<input type="text" name="dni" placeholder="DNI">
+					</li>
+					<li class="item item-input padding0">
+						<select name="genero" >
+							<option value="0">Genero</option>
+							<option value="1">Varon</option>
+							<option value="2">Mujer</option>
+						</select>
+					</li>								
+					<li class="item item-input">
+						<input type="text" name="cumple" placeholder="Fecha de nacimiento">
+					</li>				
+				</ul>
+			</form>
+		</div>
+	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<a href="#/valida_tarjeta_3">
+				<div class="title">Siguiente</div>
+			</a>
+		</div>
+	</ion-footer-bar>	
+</ion-view>

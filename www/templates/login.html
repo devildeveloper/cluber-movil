@@ -1,0 +1,27 @@
+<ion-view>
+	<ion-nav-bar class="cluber-header" >
+	  <ion-nav-back-button nav-direction="swap" ng-click="myGoBack()" nav-direction="forward">
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div id="login">
+			<p class="text-center" style="margin-top:50px">Ingresa tu correo</p>
+			<ul class="list">
+				<li class="item item-input">
+					<i class="icon ion-email placeholder-icon"></i>
+					<input type="text" placeholder="Correo electrónico">
+				</li>
+				<li class="item item-input">
+					<i class="icon ion-locked placeholder-icon"></i>
+					<input type="password" placeholder="Contraseña">
+				</li>
+			</ul>
+			<a  href="#/forgot" class="block text-right padding-right">¿Olvidaste tu contraseña?</a>			
+		</div>
+	</ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<a href="#/accountStatus"><div class="title" >Ingresar</div></a>
+		</div>
+	</ion-footer-bar>
+</ion-view>
